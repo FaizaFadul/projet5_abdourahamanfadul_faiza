@@ -28,6 +28,6 @@ fetch("http://localhost:3000/api/products")
         }
     })
     .catch(function(err){
-        console.log("Cela ne marche pas");
+        console.log("Cela ne marche pas",err);
     });
 

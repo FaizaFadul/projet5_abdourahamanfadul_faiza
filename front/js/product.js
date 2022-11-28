@@ -61,7 +61,7 @@ fetch(`http://localhost:3000/api/products/${productID}`)
                     quantity : Number(quantity = document.getElementById("quantity").value),
                 }
                 let cartState = [];
-                if (localStorage.length == 0){
+                if (localStorage.getItem("storedProduct") == null){
                     /* Lorsque aucun produit n'a été ajouté auparavant */
                     cartState = [productToBeStored];
                 } else {
